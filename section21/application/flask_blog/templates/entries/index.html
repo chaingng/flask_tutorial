@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block body %}
+<ul class="list-group list-group-flush">
+
+{% for entry in entries %}
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">{{ entry.title }}</h5>
+    </div>
+</div>
+{% else %}
+投稿がありません
+{% endfor %}
+</ul>
+{% endblock %}
