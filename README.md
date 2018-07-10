@@ -1,6 +1,8 @@
-# flask_tutorial
+# 「ゼロからFlaskがよくわかる本」サンプルコード
 
-■ 目次
+「[ゼロからFlaskがよくわかる本](https://www.amazon.co.jp/dp/B07F2X9GRQ)」のサンプルコードです。
+
+## 目次
 1. はじめに
 2. ブログアプリケーションの完成イメージ
 3. pythonのインストール
