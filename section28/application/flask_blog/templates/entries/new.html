@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block body %}
-<form action="{{ url_for('add_entry') }}" method=post class=add-entry>
+<form action="{{ url_for('entry.add_entry') }}" method=post class=add-entry>
 <div class="form-group">
     <label for="InputTitle">タイトル</label>
     <input type="text" class="form-control" id="InputTitle" name=title>

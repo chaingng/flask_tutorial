@@ -6,4 +6,8 @@ app.config.from_object('flask_blog.config')
 
 db = SQLAlchemy(app)
 
-from flask_blog.views import views, entries
+from flask_blog.views.entries import entry
+
+app.register_blueprint(entry, url_prefix='/users')
+
+from flask_blog.views import views
