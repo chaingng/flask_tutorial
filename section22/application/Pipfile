@@ -9,7 +9,6 @@ name = "pypi"
 
 flask = "*"
 flask-sqlalchemy = "*"
-flask-script = "*"
 
 
 [dev-packages]

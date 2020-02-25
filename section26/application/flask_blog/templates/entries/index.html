@@ -6,11 +6,10 @@
 <div class="card">
     <div class="card-body">
         <h5 class="card-title">{{ entry.title }}</h5>
-        <a href="{{ url_for('show_entry', id=entry.id) }}" class="card-link">続きを読む</a>
-        </div>
-        </div>
-        {% else %}
-        投稿がありません
-        {% endfor %}
-        </ul>
-        {% endblock %}
+    </div>
+</div>
+{% else %}
+投稿がありません
+{% endfor %}
+</ul>
+{% endblock %}
