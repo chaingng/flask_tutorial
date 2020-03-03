@@ -1,0 +1,24 @@
+{% extends "layout.html" %} {% block body %}
+
+<h2>{{ entry.title }}</h2>
+<br> {{ entry.text|safe }}
+
+<br>
+<br> 投稿日時 {{ entry.created_at }}
+
+<br>
+<br>
+
+
+<div class="btn-group">
+<form action="{{ url_for('entry.edit_entry', id=entry.id) }}" method="get">
+    <button type="submit" class="btn btn-secondary">編集</button>
+    </form>
+
+    <form action="{{ url_for('entry.delete_entry', id=entry.id) }}" method="post">
+    <button type="submit" class="btn btn-danger" style="margin-left:5px">削除</button>
+    </form>
+    </div>
+
+
+    {% endblock %}
