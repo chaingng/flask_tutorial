@@ -1,6 +1,6 @@
 # 「ゼロからFlaskがよくわかる本」サンプルコード
 
-「[ゼロからFlaskがよくわかる本](https://www.amazon.co.jp/dp/B07F2X9GRQ)」のサンプルコードです。
+「[ゼロからFlaskがよくわかる本](https://amzn.to/30jqAud)」のサンプルコードです。
 
 ## 目次
 1. はじめに
