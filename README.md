@@ -41,3 +41,33 @@
 36. テストカバレッジの計測とレポートの作成
 37. 最終的なアプリケーション構成
 38. 最後に
+
+## Q&A
+
+1. Flask-Scriptがインストールできない
+
+現時点(2021/07/20)のFlask-Scriptの最新バージョンにて、Flask2.0との組み合わせでバグ報告が上がっております。
+
+```
+$ python manage.py init_db
+Traceback (most recent call last):
+  File "C:\Users\xxx\workspace\python-serverless\application\manage.py", line 1, in <module>
+    from flask_script import Manager
+  File "C:\Users\xxx\.virtualenvs\application-rWZzxA8f\lib\site-packages\flask_script\__init__.py", line 15, in <module>
+    from flask._compat import text_type
+ModuleNotFoundError: No module named 'flask._compat'
+```
+
+#### 対応方法
+
+以下のコマンドで、下記のライブラリをバージョン指定でインストールしてください。
+
+```
+pipenv install "Flask==1.1.2"
+pipenv install "Jinja2==3.0.3"
+pipenv install "itsdangerous==2.0.1"
+pipenv install "Werkzeug==0.15.6"
+```
+
+その後、Flask-Scriptのインストールが可能になります。
+
